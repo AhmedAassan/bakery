@@ -1,0 +1,506 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	-o-box-sizing:      border-box;
+    box-sizing:         border-box;
+}
+.bakery {
+	width: 100%;
+	height: 100vh;
+	background-image:url( "../images/drew-coffman-1872.jpg");
+	background-size:100% 100vh;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	position: relative;
+}
+
+.bakery header {
+	width: 100%;
+	height: 80px;
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	line-height: 80px;
+	background-image:linear-gradient(to right,rgba(150,115,70,0.9),rgba(170,150,90,0.9),rgba(150,115,70,0.9),rgba(170,150,90,0.9),rgba(150,115,70,0.9),rgba(170,150,90,0.9),rgba(150,115,70,0.9),rgba(170,150,90,0.9),rgba(150,115,70,0.9),rgba(170,150,90,0.9),rgba(150,115,70,0.9),rgba(170,150,90,0.9),rgba(150,115,70,0.9),rgba(170,150,90,0.9),rgba(150,115,70,0.9),rgba(170,150,90,0.9),rgba(150,115,70,0.9),rgba(170,150,90,0.9),rgba(150,115,70,0.9),rgba(170,150,90,0.9),rgba(150,115,70,0.9),rgba(170,150,90,0.9),rgba(150,115,70,0.9),rgba(170,150,90,0.9),rgba(150,115,70,0.9),rgba(170,150,90,0.9),rgba(150,115,70,0.9),rgba(170,150,90,0.9),rgba(150,115,70,0.9),rgba(170,150,90,0.9),rgba(150,115,70,0.9),rgba(170,150,90,0.9),rgba(150,115,70,0.9),rgba(170,150,90,0.9),rgba(150,115,70,0.9),rgba(170,150,90,0.9),rgba(150,115,70,0.9),rgba(170,150,90,0.9),rgba(150,115,70,0.9),rgba(170,150,90,0.9),rgba(150,115,70,0.9),rgba(170,150,90,0.9),rgba(150,115,70,0.9),rgba(170,150,90,0.9),rgba(150,115,70,0.9),rgba(170,150,90,0.9),rgba(150,115,70,0.9),rgba(170,150,90,0.9));
+	background-size: 200px  200px;
+	transition: background 10s linear;
+	overflow: hidden;
+	z-index: 99;
+}
+
+.bakery header .img {
+	margin: 0px 0px 0px 10px;
+}
+.bakery header nav ul {
+	margin-right: 20px;
+}
+
+.bakery header nav ul li {
+	display: inline-block;
+	padding-right: 15px; 
+}
+
+.bakery header nav ul li a {
+	text-decoration: none;
+	font-size: 1.4rem;
+	font-family: 'Alegreya', serif;
+	color: white;
+	transition: color 0.3s ease;
+}
+.bakery header nav ul li a:hover {
+	color: #422E2D;
+}
+
+
+.bakery aside {
+	position: fixed;
+	top: 300px;
+	left: 98%;
+	width: 55px;
+	height: 80px;
+	background-color: white;
+	border-radius: 3px;
+	box-shadow: -1px -2px 6px 1px #BBBBBB inset;
+	z-index: 100;
+}
+
+.bakery aside .setting,.shoping {
+	position: relative;
+}
+.bakery aside .setting::after{
+	position: absolute;
+	content: "See Demo Sites";
+	background-color: white;
+	color: black;
+	width: 150px;
+	height: 22px;
+	padding: 5px;
+	line-height: 10px;
+	border-radius: 3px;
+	right:0.5%;
+	transform: translate(-40%,5px);
+	display: none;
+	text-align: center;
+}
+
+.bakery aside .setting i {
+	margin-top: 10px;
+	margin-left: 5px;
+	color: gray;
+	transition: color 0.3s ease;
+	font-size: 1.3rem;
+	cursor: pointer;
+}
+
+.bakery aside .setting i:hover {
+	color:#218FE6 ;
+}
+
+.bakery aside .shoping i:hover {
+	color:#218FE6 ;
+}
+.bakery aside .shoping i {
+	margin-top: 20px;
+	margin-left: 5px;
+	color: gray;
+	transition: color 0.3s ease;
+	font-size: 1.3rem;
+	cursor: pointer;
+}
+	
+.bakery aside .shoping::after{
+	position: absolute;
+	content: "Buy Engage Now!";
+	background-color: white;
+	color: black;
+	width: 150px;
+	height: 22px;
+	padding: 5px;
+	line-height: 10px;
+	border-radius: 3px;
+	right:0.1%;
+	transform: translate(-40%,5px);
+	display: none;
+	text-align: center;
+}
+
+.bakery aside .shoping:hover::after {
+	display: block;
+	bottom:5px;
+	cursor: pointer;
+}
+
+.bakery aside .setting:hover::after {
+	display: block;
+	bottom:10px;
+	cursor: pointer;
+}
+
+.bakery .family {
+	position: relative;
+	width: 570px;
+	height: 500px;
+	top:65%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	font-family: 'Alegreya', serif;
+	color: white;
+}
+
+.bakery .family h4 {
+	margin-bottom: 10px;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-family: 'Alegreya Sans SC', sans-serif;
+	font-size: 1.5rem;
+}
+
+.bakery .family h1 {
+	font-size: 5rem;
+	font-weight: 1;
+	margin-bottom: 15px;
+}
+
+.bakery .family p {
+	font-size: 1.6rem;
+	font-family: 'Alegreya Sans', sans-serif;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.bakery .family button {
+	margin-top: 20px;
+	padding: 20px 25px;
+	outline: none;
+	border:none;
+	border-radius: 5px;
+}
+.bakery .family .learn {
+	background-color: #8F754A;
+	color: white;
+	font-size: 1rem;
+	border: 1px solid #8F754A;
+	transition: all 0.3s ease-in-out;
+	margin-right: 5px;
+}
+
+.bakery .family .learn:hover{
+	background-color: whitesmoke;
+	color: black;
+}
+
+.bakery .family .contact{
+	background-color: hsla(0,0%,0%,0.00);
+	color: white;
+	font-size: 1rem;
+	border: 1px solid white;
+	transition: all 0.3s ease-in-out;
+	margin-left: 5px;
+	box-shadow: none;
+} 
+
+.bakery .family .contact:hover{
+	background-color: whitesmoke;
+	color: black;
+}
+
+.animation{
+	position: absolute;
+	width: 30px;
+	height: 50px;
+	top:90%;
+	left: 50%;
+	background-color: hsla(0,0%,0%,0.00);
+	border: 2px solid white;
+	border-radius: 38%;
+}
+.animation::before{
+	position: absolute;
+	content: "";
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	background-color: white;
+	transform: translate(8px,5px);
+	animation: circley 1s infinite linear;
+}
+
+@keyframes circley{
+	0%{
+		transform: translate(8px,2px);
+	}
+	100%{
+		transform: translate(8px,20px);
+		opacity: 0;
+	}
+	
+}
+
+
+.who {
+	 position: relative;
+	 width: 100%;
+     padding: 100px 200px 50px;
+}
+
+.who .img-who img {
+	width: 546px;
+	height: 518px;
+	padding: 3px;
+	border:1px solid #EEE;
+	float: left;
+}
+
+.who .we {
+	width: 546px;
+	height: 518px;
+	float: right;
+	margin-top: 50px;
+}
+
+.who .we h2 {
+	font-family: "Alegreya";
+	font-size: 2.2rem;
+	font-weight: 1;
+}
+
+.who .we p{
+	padding: 25px 0px;
+	line-height: 30px;
+	width: 550px;
+	font-family: 'Alegreya Sans', sans-serif;
+	font-size: 17px;
+	color: #606060;
+	
+}
+
+.who .we .list {
+	line-height: 60px;
+}
+
+.who .we .list ul {
+    list-style: none;
+	
+}
+
+.who .we .list ul li span {
+	font-size: 1.2rem;
+	color: #606060;
+	margin-left: 10px;
+}
+.who .we .list ul li i {
+	color: #8E7754;
+	width: 45px;
+	height: 45px;
+	font-size: 1.3rem;
+	border-radius: 50%;
+	border:1px solid gray;
+	text-align: center;
+	line-height: 45px;
+}
+.clr{
+	clear: both;
+}
+
+.our {
+	position: relative;
+	width: 100%;
+    padding: 100px 200px 50px;
+	background-color: #F8F8F8;
+	box-shadow: -2px 2px 10px 3px #EDEDED inset;
+}
+.our .locatin{
+	width: 546px;
+	height: 518px;
+	float: left;
+	margin-top: 100px;
+}
+.our .locatin h2{
+	font-family: "Alegreya";
+	font-size: 2.2rem;
+	font-weight: 1;
+}
+.our .locatin p{
+	padding: 25px 0px;
+	line-height: 30px;
+	width: 550px;
+	font-family: 'Alegreya Sans', sans-serif;
+	font-size: 17px;
+	color: #606060;
+}
+
+
+.our .img2 img{
+	width: 546px;
+	height: 518px;
+	padding: 3px;
+	border:1px solid #EEE;
+	float: right;
+	
+}
+
+.test {
+	width: 100%;
+	height: 500px;
+}
+
+.slider{
+	background-color: #F8F8F8;
+	box-shadow: -2px 2px 10px 3px #EDEDED inset;
+	padding: 50px 0px;
+}
+
+.contact{
+	background-color: #F8F8F8;
+	box-shadow: -2px 2px 10px 3px #EDEDED inset;
+	padding: 60px 0px;
+}
+
+.contact .Information h2 {
+	font-family: "Alegreya";
+	font-size: 32px;
+	font-weight: 300;
+}
+
+.contact .Information p {
+	font-family: "Alegreya Sans";
+    font-size: 17px;
+}
+
+.contact .Information ul li {
+	list-style: none;
+	padding: 10px 0px;
+	
+}
+
+.contact .Information ul li span {
+	margin: 0px 10px;
+}
+
+.contact .Information ul li i {
+	font-size: 1.3rem;
+	color: gray;
+}
+
+.before_footer {
+	background-color: #403D38;
+	color: #B1B1B1;
+	height: 450px;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: center;
+}
+
+
+.before_footer h2{
+	font-family: "Alegreya Sans";
+    font-size: 32px;
+	color: white;
+}
+
+
+
+.before_footer p {
+    font-family: "Alegreya Sans";
+	line-height: 35px;
+	font-size: 1.2rem;
+}
+
+footer {
+	position: relative;
+	height: 300px;
+	background-color: #353330;
+	color: #B1B1B1;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+}
+
+
+footer  .teast {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%)
+}
+
+footer p {
+	margin: 15px 0px 0px 70px;
+	font-size: 0.9rem;
+}
+
+footer p .Design {
+	margin: 15px 0px 0px 20px;
+	color: tomato;
+}
+footer .ahmed{
+	position: absolute;
+	animation: glad 2.5s infinite linear;
+}
+footer .athar{
+	margin-left: 50px;
+	position: absolute;
+	animation: glad 2.5s infinite linear;
+}
+@keyframes glad {
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+footer ul {
+	margin: 15px 0px 0px 90px;
+}
+
+footer ul li {
+	display: inline-block;
+	list-style: none;
+	padding: 5px;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 50%;
+	background-color: #403D38;
+	transition: all 0.3s ease-in-out;
+}
+footer ul li i {
+	transition: all 0.3s ease-in-out;
+	color: white;
+}
+footer ul li:hover:first-child {
+	background-color: #3b5999;
+	
+}
+footer ul li:hover:nth-of-type(2) {
+	background-color: #dd4b39;
+	
+}
+footer ul li:hover:nth-of-type(3){
+	background-color: #0077B5;
+	
+}
+footer ul li:hover:last-of-type {
+	background-color: #55acee;
+	
+}
+
+footer ul li:hover i  {
+	transform: rotate(25deg) scale(1.3);
+	
+}
+
+
+
+
